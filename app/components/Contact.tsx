@@ -32,7 +32,8 @@ export default function Contact() {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch (error) {
+    } catch {
+      // Removed unused 'error' parameter
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
@@ -60,8 +61,8 @@ export default function Contact() {
             </span>
           </h2>
           <p className="text-xl text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
-            I'm always interested in new opportunities and exciting projects.
-            Let's discuss how we can work together!
+            I&apos;m always interested in new opportunities and exciting
+            projects. Let&apos;s discuss how we can work together!
           </p>
         </div>
 
@@ -69,10 +70,12 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
+              <h3 className="text-2xl font-semibold mb-6">
+                Let&apos;s Connect
+              </h3>
               <p className="text-zinc-600 dark:text-zinc-400 mb-8">
                 Whether you have a project in mind, want to collaborate, or just
-                want to say hello, I'd love to hear from you.
+                want to say hello, I&apos;d love to hear from you.
               </p>
             </div>
 
@@ -274,8 +277,8 @@ export default function Contact() {
               {/* Status Messages */}
               {submitStatus === "success" && (
                 <div className="p-4 bg-green-100 dark:bg-green-900/20 border border-green-300 dark:border-green-700 rounded-lg text-green-700 dark:text-green-300">
-                  Thank you! Your message has been sent successfully. I'll get
-                  back to you soon.
+                  Thank you! Your message has been sent successfully. I&apos;ll
+                  get back to you soon.
                 </div>
               )}
 
