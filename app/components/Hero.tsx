@@ -114,7 +114,7 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Hi, I'm{" "}
+              Hi, I&apos;m{" "}
               <span className="relative">
                 <span className="bg-gradient-to-r from-primary-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-gradient-x">
                   Youssef Hassany
@@ -125,14 +125,14 @@ export default function Hero() {
 
             <div className="mb-6">
               <h2 className="text-xl md:text-2xl text-zinc-600 dark:text-zinc-400">
-                Frontend Developer Wroking with{" "}
+                Frontend Developer Working with{" "}
               </h2>
               <div className="mt-2 h-8 overflow-hidden">
                 <div
                   className="transition-transform duration-500 ease-out"
                   style={{ transform: `translateY(-${currentSkill * 32}px)` }}
                 >
-                  {skills.map((skill, index) => (
+                  {skills.map((skill) => (
                     <div
                       key={skill}
                       className="h-8 flex items-center text-xl md:text-2xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent"
@@ -214,7 +214,7 @@ export default function Hero() {
                   label: "Email Contact",
                   color: "hover:text-red-500",
                 },
-              ].map(({ href, icon: Icon, label, color }, index) => (
+              ].map(({ href, icon: Icon, label, color }) => (
                 <a
                   key={href}
                   href={href}
@@ -226,7 +226,6 @@ export default function Hero() {
                   }
                   className={`group p-4 rounded-xl bg-zinc-100/50 dark:bg-zinc-800/50 hover:bg-zinc-200/50 dark:hover:bg-zinc-700/50 backdrop-blur-sm transition-all duration-300 hover:scale-110 hover:shadow-lg transform ${color}`}
                   aria-label={label}
-                  style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <Icon
                     size={24}

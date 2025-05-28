@@ -2,13 +2,11 @@
 
 import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import {
   Github,
   ExternalLink,
   Filter,
   Star,
-  Eye,
   Code2,
   Sparkles,
   TrendingUp,
@@ -199,7 +197,7 @@ export default function Projects() {
                 isVisible ? "animate-fade-in-up" : "opacity-0 translate-y-10"
               }`}
               style={{ animationDelay: `${index * 0.1 + 0.5}s` }}
-              // @ts-ignore
+              // @ts-expect-error - React event handler with custom prop
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
@@ -270,7 +268,7 @@ export default function Projects() {
                     </h3>
                     <Zap
                       className={`w-5 h-5 text-yellow-500 transition-all duration-300 ${
-                        // @ts-ignore
+                        // @ts-expect-error - Custom comparison with potentially undefined value
                         hoveredProject === project.id
                           ? "animate-pulse scale-110"
                           : "opacity-0"
