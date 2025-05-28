@@ -6,22 +6,22 @@ export default function Footer() {
 
   const socialLinks = [
     {
-      href: "https://github.com/yourusername",
+      href: "https://github.com/youssef-hassany",
       icon: Github,
       label: "GitHub",
     },
     {
-      href: "https://linkedin.com/in/yourusername",
+      href: "https://www.linkedin.com/in/youssef-hassany-862a37284/",
       icon: Linkedin,
       label: "LinkedIn",
     },
     {
-      href: "https://twitter.com/yourusername",
+      href: "https://x.com/ywsf_hassany",
       icon: Twitter,
       label: "Twitter",
     },
     {
-      href: "mailto:john.doe@example.com",
+      href: "mailto:youssefhassany22@gmail.com",
       icon: Mail,
       label: "Email",
     },
@@ -94,18 +94,18 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold mb-4">Get In Touch</h3>
             <div className="space-y-2 text-zinc-400">
-              <p>San Francisco, CA</p>
+              <p>Egypt</p>
               <a
-                href="mailto:john.doe@example.com"
+                href="mailto:youssefhassany22@gmail.com"
                 className="hover:text-white transition-colors"
               >
-                john.doe@example.com
+                youssefhassany22@gmail.com
               </a>
               <a
-                href="tel:+1234567890"
+                href="tel:+201226647915"
                 className="hover:text-white transition-colors"
               >
-                +1 (234) 567-890
+                +20 122 6647-915
               </a>
             </div>
           </div>

@@ -334,30 +334,6 @@ export default function Projects() {
             </div>
           ))}
         </div>
-
-        {/* Enhanced View More */}
-        <div
-          className={`text-center mt-16 transition-all duration-1000 delay-700 ${
-            isVisible ? "animate-slide-up" : "opacity-0 translate-y-10"
-          }`}
-        >
-          <Link
-            href="/projects"
-            className="group relative inline-flex items-center gap-3 bg-gradient-to-r from-primary-600 to-purple-600 hover:from-primary-700 hover:to-purple-700 text-white font-medium py-4 px-8 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform overflow-hidden"
-          >
-            <span className="relative z-10 flex items-center gap-3">
-              <Eye
-                size={20}
-                className="group-hover:scale-110 transition-transform duration-300"
-              />
-              View All Projects
-              <span className="bg-white/20 px-2 py-1 rounded-full text-xs">
-                {projects.length}
-              </span>
-            </span>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary-700 to-purple-700 translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-          </Link>
-        </div>
       </div>
 
       <style jsx>{`

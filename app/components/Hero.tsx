@@ -180,7 +180,7 @@ export default function Hero() {
               </Link>
 
               <a
-                href="/resume.pdf"
+                href="/Youssef-Hassany-Resume.pdf"
                 download
                 className="group relative border-2 border-zinc-300 dark:border-zinc-600 hover:border-primary-500 dark:hover:border-primary-400 text-zinc-700 dark:text-zinc-300 font-medium py-4 px-8 rounded-xl transition-all duration-300 inline-flex items-center gap-2 backdrop-blur-sm hover:shadow-lg hover:scale-105 transform"
                 aria-label="Download Resume"
@@ -197,19 +197,19 @@ export default function Hero() {
             <div className="flex gap-4">
               {[
                 {
-                  href: "https://github.com/yourusername",
+                  href: "https://github.com/youssef-hassany",
                   icon: Github,
                   label: "GitHub Profile",
                   color: "hover:text-gray-900 dark:hover:text-white",
                 },
                 {
-                  href: "https://linkedin.com/in/yourusername",
+                  href: "https://www.linkedin.com/in/youssef-hassany-862a37284/",
                   icon: Linkedin,
                   label: "LinkedIn Profile",
                   color: "hover:text-blue-600",
                 },
                 {
-                  href: "mailto:john.doe@example.com",
+                  href: "mailto:youssefhassany22@gmail.com",
                   icon: Mail,
                   label: "Email Contact",
                   color: "hover:text-red-500",

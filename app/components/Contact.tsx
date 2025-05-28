@@ -87,10 +87,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:john.doe@example.com"
+                    href="mailto:youssefhassany22@gmail.com"
                     className="text-zinc-600 dark:text-zinc-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    john.doe@example.com
+                    youssefhassany22@gmail.com
                   </a>
                 </div>
               </div>
@@ -105,10 +105,10 @@ export default function Contact() {
                 <div>
                   <h4 className="font-medium">Phone</h4>
                   <a
-                    href="tel:+1234567890"
+                    href="tel:+201226647915"
                     className="text-zinc-600 dark:text-zinc-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                   >
-                    +1 (234) 567-890
+                    +20 122 6647-915
                   </a>
                 </div>
               </div>
@@ -122,9 +122,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-zinc-600 dark:text-zinc-400">
-                    San Francisco, CA
-                  </p>
+                  <p className="text-zinc-600 dark:text-zinc-400">Egypt</p>
                 </div>
               </div>
             </div>
@@ -134,7 +132,7 @@ export default function Contact() {
               <h4 className="font-medium mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/yourusername"
+                  href="https://github.com/youssef-hassany"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 hover:bg-primary-100 dark:hover:bg-primary-900/20 rounded-lg transition-colors group"
@@ -146,7 +144,7 @@ export default function Contact() {
                   />
                 </a>
                 <a
-                  href="https://linkedin.com/in/yourusername"
+                  href="https://www.linkedin.com/in/youssef-hassany-862a37284/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 hover:bg-primary-100 dark:hover:bg-primary-900/20 rounded-lg transition-colors group"
@@ -158,7 +156,7 @@ export default function Contact() {
                   />
                 </a>
                 <a
-                  href="https://twitter.com/yourusername"
+                  href="https://x.com/ywsf_hassany"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 bg-zinc-100 dark:bg-zinc-800 hover:bg-primary-100 dark:hover:bg-primary-900/20 rounded-lg transition-colors group"
