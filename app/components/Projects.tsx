@@ -129,14 +129,15 @@ export default function Projects() {
 
         {/* Enhanced Filter */}
         <div
-          className={`flex justify-center mb-12 transition-all duration-1000 delay-300 ${
+          className={`flex justify-center mb-12 transition-all duration-1000 delay-300 relative ${
             isVisible ? "animate-slide-up" : "opacity-0 translate-y-10"
           }`}
+          style={{ zIndex: 9999 }}
         >
           <div className="relative">
             <button
               onClick={() => setIsFilterOpen(!isFilterOpen)}
-              className="group flex items-center gap-3 px-6 py-4 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border-2 border-zinc-200 dark:border-zinc-600 rounded-2xl hover:border-primary-500 dark:hover:border-primary-400 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+              className="group flex items-center gap-3 px-6 py-4 bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border-2 border-zinc-200 dark:border-zinc-600 rounded-2xl hover:border-primary-500 dark:hover:border-primary-400 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform cursor-pointer"
             >
               <Filter
                 size={18}
@@ -151,7 +152,10 @@ export default function Projects() {
             </button>
 
             {isFilterOpen && (
-              <div className="absolute top-full mt-3 left-0 right-0 bg-white/95 dark:bg-zinc-800/95 backdrop-blur-lg border-2 border-zinc-200 dark:border-zinc-600 rounded-2xl shadow-2xl z-20 overflow-hidden animate-slide-down">
+              <div
+                className="absolute top-full mt-3 left-0 right-0 bg-white/95 dark:bg-zinc-800/95 backdrop-blur-lg border-2 border-zinc-200 dark:border-zinc-600 rounded-2xl shadow-2xl overflow-hidden animate-slide-down"
+                style={{ zIndex: 9999 }}
+              >
                 {filterOptions.map((option, index) => {
                   const Icon = option.icon;
                   return (
@@ -161,21 +165,14 @@ export default function Projects() {
                         setFilter(option.value);
                         setIsFilterOpen(false);
                       }}
-                      className={`w-full flex items-center gap-3 px-6 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-700/50 transition-all duration-200 ${
+                      className={`w-full flex items-center gap-3 px-6 py-4 hover:bg-zinc-50 dark:hover:bg-zinc-700/50 transition-all duration-200 cursor-pointer ${
                         filter === option.value
-                          ? "bg-gradient-to-r from-primary-50 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 text-primary-600 dark:text-primary-400 border-l-4 border-primary-500"
+                          ? "bg-gradient-to-l from-primary-500 to-purple-50 dark:from-primary-900/20 dark:to-purple-900/20 border-r-4 border-primary-500"
                           : ""
                       }`}
                       style={{ animationDelay: `${index * 0.1}s` }}
                     >
-                      <Icon
-                        size={18}
-                        className={
-                          filter === option.value
-                            ? "text-primary-600"
-                            : "text-zinc-500"
-                        }
-                      />
+                      <Icon size={18} />
                       <span className="font-medium">{option.label}</span>
                       <span className="ml-auto bg-zinc-100 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-400 px-2 py-1 rounded-full text-xs">
                         {option.count}
@@ -189,7 +186,7 @@ export default function Projects() {
         </div>
 
         {/* Enhanced Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 relative z-10">
           {filteredProjects.map((project, index) => (
             <div
               key={project.id}

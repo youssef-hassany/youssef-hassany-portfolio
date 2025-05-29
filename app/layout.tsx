@@ -105,7 +105,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="min-h-screen bg-white dark:bg-zinc-900 transition-colors">
+          <div className="min-h-screen bg-white dark:bg-zinc-900 transition-colors text-black dark:text-white">
             <Header />
             <main>{children}</main>
             <Footer />

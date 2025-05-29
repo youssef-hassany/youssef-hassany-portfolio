@@ -35,7 +35,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-zinc-900 dark:bg-zinc-950 text-white">
+    <footer className="bg-zinc-200 dark:bg-zinc-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8 py-12">
           {/* Brand */}
@@ -75,7 +75,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-gray-600 dark:text-gray-100">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.href}>
@@ -92,7 +94,9 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-semibold mb-4">Get In Touch</h3>
+            <h3 className="font-semibold mb-4 text-gray-600 dark:text-gray-100">
+              Get In Touch
+            </h3>
             <div className="space-y-2 text-zinc-400">
               <p>Egypt</p>
               <a
