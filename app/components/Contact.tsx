@@ -10,6 +10,7 @@ import {
   Linkedin,
   Twitter,
 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -27,13 +28,33 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
     try {
-      await new Promise((resolve) => setTimeout(resolve, 2000));
+      // EmailJS Configuration
+      const serviceID =
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "serviceID";
+      const templateID =
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "templateID";
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+      console.log(serviceID, templateID, publicKey);
+
+      await emailjs.send(
+        serviceID,
+        templateID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          to_email: "youssefhassany22@gmail.com",
+        },
+        publicKey
+      );
+
       setSubmitStatus("success");
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } catch {
-      // Removed unused 'error' parameter
+    } catch (error) {
+      console.error("Email sending failed:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
