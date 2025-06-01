@@ -35,7 +35,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <Link
             href="/"
-            className="text-2xl font-bold bg-gradient-to-r from-red-600 via-blue-600 to-red-800 bg-clip-text text-transparent mb-4 block hover:from-red-500 hover:via-blue-500 hover:to-red-700 transition-all duration-300"
+            className="text-xl font-bold bg-gradient-to-r from-primary-600 to-purple-600 bg-clip-text text-transparent"
           >
             Youssef Hassany
           </Link>
