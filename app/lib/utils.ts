@@ -26,6 +26,25 @@ export const projects = [
   },
   {
     id: 2,
+    title: "HatComics",
+    description:
+      "HatComics is a full-stack web application built to connect comic book enthusiasts through personalized recommendations and interactive content. The platform supports a wide range of features, including comic reviews, user-generated blogs, and a social layer to engage with valuable community members.",
+    image: "/images/hat-comics.png",
+    technologies: [
+      "Next.JS",
+      "Typescript",
+      "Tailwind CSS",
+      "Zustand",
+      "Clerk (auth)",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    // githubUrl: "https://github.com/youssefHassany/e-commerce-react",
+    liveUrl: "https://hatcomics.vercel.app/",
+    featured: true,
+  },
+  {
+    id: 3,
     title: "FindMyCash",
     description:
       "a friendly cash tracker that will help you keep track with all your purchases",
@@ -34,23 +53,6 @@ export const projects = [
     githubUrl: "https://github.com/youssefHassany/find-my-cash",
     liveUrl: "https://find-my-cash.vercel.app/",
     featured: true,
-  },
-  {
-    id: 3,
-    title: "E-Commerce",
-    description:
-      "an E-commerce website with react, you can search products, see products data, add products to cart nad more...",
-    image: "/images/project3.png",
-    technologies: [
-      "Next.JS",
-      "Typescript",
-      "Tailwind CSS",
-      "Zustand",
-      "ShadCN",
-    ],
-    githubUrl: "https://github.com/youssefHassany/e-commerce-react",
-    liveUrl: "https://e-commerce-react-tawny.vercel.app/",
-    featured: false,
   },
 ];
 
