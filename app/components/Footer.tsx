@@ -105,12 +105,6 @@ export default function Footer() {
               >
                 youssefhassany22@gmail.com
               </a>
-              <a
-                href="tel:+201226647915"
-                className="hover:text-white transition-colors"
-              >
-                +20 122 6647-915
-              </a>
             </div>
           </div>
         </div>

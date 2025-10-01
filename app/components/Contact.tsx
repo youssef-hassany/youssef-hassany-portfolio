@@ -126,15 +126,6 @@ export default function Contact() {
                     className="text-primary-600 dark:text-primary-400"
                   />
                 </div>
-                <div>
-                  <h4 className="font-medium">Phone</h4>
-                  <a
-                    href="tel:+201226647915"
-                    className="text-zinc-600 dark:text-zinc-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
-                  >
-                    +20 122 6647-915
-                  </a>
-                </div>
               </div>
 
               <div className="flex items-center gap-4">
